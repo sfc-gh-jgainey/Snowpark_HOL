@@ -22,8 +22,6 @@ Workshop highlights:
 
 * `git clone https://github.com/sfc-gh-jgainey/Snowpark_HOL` OR `git clone git@github.com:sfc-gh-jgainey/snowpark_hol.git` 
 
-* `cd Advertising-Spend-ROI-Prediction`
-
 ### **Step 2** -- Create And Activate Conda Environment
 
 * Note: You can download the miniconda installer from
