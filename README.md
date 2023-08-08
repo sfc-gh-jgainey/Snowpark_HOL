@@ -22,10 +22,10 @@ Workshop highlights:
 ### What You'll Need
 
 * You will need the following things before beginning:
-* * A Snowflake Account
-* * A Python Environment and Python IDE or Code Editor. We recommend Visual Studio
+    * A Snowflake Account
+    * A Python Environment and Python IDE or Code Editor. We recommend Visual Studio
 Code
-* * Access to Git to fork the Snowpark_Hands-on_Lab clone locally
+    * Access to Git to fork the Snowpark_Hands-on_Lab clone locally
 
 ### Optional
 
