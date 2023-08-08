@@ -18,10 +18,26 @@ Workshop highlights:
 
 ## Setup Instructions
 
-## Mac Setup Instructions 
+
+### What You'll Need
+
+* You will need the following things before beginning:
+* ● A Snowflake Account
+* ● A Python Environment and Python IDE or Code Editor. We recommend Visual Studio
+Code
+* ● Access to Git to fork the Snowpark_Hands-on_Lab clone locally
+
+### Prerequisite
+
+* If you've not already done so, install Git on your machine
+Windows & Mac Instructions | https://www.jcchouinard.com/install-git/
+
+
+
 
 ### **Step 1** -- Clone or download repository
 
+* Open Terminal and navigate to your preferred directory
 * `git clone https://github.com/sfc-gh-jgainey/Snowpark_HOL` OR `git clone git@github.com:sfc-gh-jgainey/snowpark_hol.git` 
 
 ### **Step 2** -- Create And Activate Conda Environment
