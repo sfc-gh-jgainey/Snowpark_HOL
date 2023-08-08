@@ -18,7 +18,7 @@ Workshop highlights:
 
 ## Setup Instructions
 
-#### Mac Setup Instructions ####
+### ***Mac Setup Instructions 
 
 ### **Step 1** -- Clone or download repository
 
