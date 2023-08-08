@@ -22,12 +22,12 @@ Workshop highlights:
 ### What You'll Need
 
 * You will need the following things before beginning:
-* ● A Snowflake Account
-* ● A Python Environment and Python IDE or Code Editor. We recommend Visual Studio
+* * A Snowflake Account
+* * A Python Environment and Python IDE or Code Editor. We recommend Visual Studio
 Code
-* ● Access to Git to fork the Snowpark_Hands-on_Lab clone locally
+* * Access to Git to fork the Snowpark_Hands-on_Lab clone locally
 
-### Prerequisite
+### Optional
 
 * If you've not already done so, install Git on your machine
 Windows & Mac Instructions | https://www.jcchouinard.com/install-git/
@@ -38,7 +38,8 @@ Windows & Mac Instructions | https://www.jcchouinard.com/install-git/
 ### **Step 1** -- Clone or download repository
 
 * Open Terminal and navigate to your preferred directory
-* `git clone https://github.com/sfc-gh-jgainey/Snowpark_HOL` OR `git clone git@github.com:sfc-gh-jgainey/snowpark_hol.git` 
+* In Terminal (Mac) or command line (Windows git bash) | https://www.jcchouinard.com/clone-github-repository-on-windows/, move to preferred directory
+* Use the git clone command along with the copied URL (`git clone https://github.com/sfc-gh-jgainey/Snowpark_HOL`)
 
 ### **Step 2** -- Create And Activate Conda Environment
 
@@ -51,9 +52,9 @@ https://conda.io/miniconda.html. OR, you may use any other Python environment wi
 
 ### **Step 3** -- Install Snowpark for Python and other libraries in Conda environment
 
-* `conda install -c https://repo.anaconda.com/pkgs/snowflake snowflake-snowpark-python pandas notebook scikit-learn cachetools`
+* `conda install -c https://repo.anaconda.com/pkgs/snowflake snowflake-snowpark-python pandas notebook scikit-learn cachetools plotly snowflake-ml-python`
 
-### **Step 4** -- Update [connection.json](connection.json) with your Snowflake account details and credentials. Use the same database, schema, and warehouse that is provided. 
+### **Step 4** -- Update [connections.json](connections.json) with your Snowflake account details and credentials. Use the same database, schema, and warehouse that is provided. 
 
 * Note: For the **account** parameter, specify your [account identifier](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html) and do not include the snowflakecomputing.com domain name. Snowflake automatically appends this when creating the connection.
 
