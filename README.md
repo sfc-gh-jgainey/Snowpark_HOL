@@ -41,8 +41,8 @@ Windows & Mac Instructions | https://www.jcchouinard.com/install-git/
 
 ### **Step 1** -- Clone or download repository
 
-* Open Terminal and navigate to your preferred directory
-* In Terminal (Mac) or command line (Windows git bash) | https://www.jcchouinard.com/clone-github-repository-on-windows/, move to preferred directory
+* Open Terminal on Mac or Command Prompt/Anaconda Prompt on Windows and navigate to your preferred directory
+
 * Use the git clone command along with the copied URL (`git clone https://github.com/sfc-gh-jgainey/Snowpark_HOL`)
 
 ### **Step 2** -- Create And Activate Conda Environment
@@ -55,7 +55,7 @@ Windows & Mac Instructions | https://www.jcchouinard.com/install-git/
 
 * `conda install -c https://repo.anaconda.com/pkgs/snowflake snowflake-snowpark-python pandas notebook scikit-learn cachetools plotly snowflake-ml-python`
 
-### **Step 4** -- Update [connections.json](connections.json) with your Snowflake account details and credentials. Use the same database, schema, and warehouse that is provided. 
+### **Step 4** -- Using Finder in Mac or File Explore on Windows navigate to the local repository and open [connections.json](connections.json) with your file editor of choice.  Update the Snowflake account details and credentials. Please do not edit the database, schema, role or warehouse that is provided. 
 
 * Note: For the **account** parameter, specify your [account identifier](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html) and do not include the snowflakecomputing.com domain name. Snowflake automatically appends this when creating the connection.
 
