@@ -60,7 +60,10 @@ Windows & Mac Instructions | https://www.jcchouinard.com/install-git/
 * Note: For the **account** parameter, specify your [account identifier](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html) and do not include the snowflakecomputing.com domain name. Snowflake automatically appends this when creating the connection.
 
 ### **Step 5** -- Train & deploy ML model
+* In a terminal or command prompt, run  `python -m ipykernel install --user --name snowpark --display-name "Python (Snowpark)"`
 
-* In a terminal window, browse to the folder where you have this Notebook downloaded and run `jupyter notebook` at the command line
+### **Step 6** -- Train & deploy ML model
+
+* In a terminal or command prompt window, browse to the folder where you have this Notebook downloaded and run `jupyter notebook` at the command line
 * Open and run through the [Snowpark_For_Python.ipynb](Snowpark_For_Python.ipynb) notebook
   * Note: Make sure the Jupyter notebook (Python) kernel is set to ***snowpark***
