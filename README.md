@@ -55,6 +55,8 @@ Windows & Mac Instructions | https://www.jcchouinard.com/install-git/
 
 * `conda install -c https://repo.anaconda.com/pkgs/snowflake snowflake-snowpark-python pandas notebook scikit-learn cachetools plotly snowflake-ml-python`
 
+* `pip install streamlit`
+
 ### **Step 4** -- Using Finder in Mac or File Explore on Windows navigate to the local repository and open [connections.json](connections.json) with your file editor of choice.  Update the Snowflake account details and credentials. Please do not edit the database, schema, role or warehouse that is provided. 
 
 * Note: For the **account** parameter, specify your [account identifier](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html) and do not include the snowflakecomputing.com domain name. Snowflake automatically appends this when creating the connection.
