@@ -10,7 +10,7 @@ from snowflake.snowpark import Table
 import snowflake.snowpark.functions as F
 import streamlit as st
 
-INITS="re"
+INITS="jlg"
 MONTH="2022-04-01"
 SEASON="'spring'"
 from snowflake.snowpark.context import get_active_session
@@ -56,7 +56,7 @@ def join_data(df_cost: Table, df_revenue: Table) -> pd.DataFrame:
 def get_new_predicted_revenue(session: Session, new_allocations:dict, season=str) -> float:
         return (
             session
-                .sql(f"SELECT predict_roi_re(array_construct({season},{new_allocations['search_engine']}, {new_allocations['social_media']}, {new_allocations['video']}, {new_allocations['email']}))")
+                .sql(f"SELECT predict_roi_{INITS}(array_construct({season},{new_allocations['search_engine']}, {new_allocations['social_media']}, {new_allocations['video']}, {new_allocations['email']}))")
                 .to_pandas()
                 .iloc[0,0]
         )
@@ -78,6 +78,11 @@ st.title("SportsCo Ad Spend Optimizer")
 
 # Call functions to get Snowflake session and load data
 session = get_active_session()
+session.sql("USE DATABASE DB_SNOWPARK_HOL")
+session.sql("USE SCHEMA ROI_PREDICTION")
+session.sql("USE ROLE SYSADMIN")
+
+
 sdf_total_cost=load_total_cost_data(session, group_cols=["MONTH","YEAR","SEASON","CHANNEL"])
 sdf_revenue=load_revenue_data(session)
 pdf_cost_and_revenue=join_data(sdf_total_cost, sdf_revenue)
