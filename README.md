@@ -64,8 +64,9 @@ Windows & Mac Instructions | https://www.jcchouinard.com/install-git/
 ### **Step 5** -- Enable Jupyter Notebook for the environment you just created
 * In a terminal or command prompt, run  `python -m ipykernel install --user --name snowpark --display-name "Python (Snowpark)"`
 
-### **Step 6** -- Train & deploy ML model
+### **Step 6** -- Confirm your ability to authenticate
 
 * In a terminal or command prompt window, browse to the folder where you have this Notebook downloaded and run `jupyter notebook` at the command line
-* Navigate to the [Snowpark_For_Python.ipynb](Snowpark_For_Python.ipynb) notebook
+* Navigate to the [Snowpark_For_Python.ipynb](Snowpark_For_Python.ipynb) notebook and run the "Import Libraries" cell and "Establish Secure Connection to Snowflake" cell.
+* Confirm you were able to run both cells with no errors.  If so, you're ready for the Hands-on Lab!  If not, please reach to your account team for help with your errors.
   * Note: Make sure the Jupyter notebook (Python) kernel is set to ***Python (Snowpark)***
