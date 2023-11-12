@@ -8,11 +8,11 @@ In this workshop, we will train a Linear Regression model to predict future ROI 
 
 Workshop highlights:
 
-* Set up your favorite IDE (e.g. Jupyter, VSCode) for Snowpark and ML
+* Set up VSCode for Snowpark and ML
 * Analyze data and perform data engineering tasks using Snowpark DataFrames
-* Use open-source Python libraries from a curated Snowflake Anaconda channel with near-zero maintenance or overhead
+* Use open-source Python libraries from the curated Snowflake Anaconda channel (https://repo.anaconda.com/pkgs/snowflake/) with near-zero maintenance or overhead
 * Deploy ML model training code on Snowflake using Python Stored Procedure
-* Create and register Scalar and Vectorized Python User-Defined Functions (UDFs) for inference
+* Create and register Scalar and Vectorized Python User-Defined Functions (UDFs) for batch inference
 * Create Snowflake Task to automate (re)training of the model
 
 
@@ -23,29 +23,24 @@ Workshop highlights:
 
 * You will need the following things before beginning:
     * A Snowflake Account
-    * A Python Environment and Python IDE or Code Editor. We recommend Visual Studio
-Code
-    * Access to Git to fork the Snowpark_Hands-on_Lab clone locally
+    * If you've not already done so, install Git on your machine Windows & Mac Instructions | https://www.jcchouinard.com/install-git/
+    * Install - [VS Code](https://code.visualstudio.com/) (recommended); as of 25Oct2023 the current version is v1.83.1 (Universal)
+    * Install - [Miniconda] (https://conda.io/miniconda.html).
+    * Install - [Github Desktop](https://desktop.github.com/) (recommended); access GitHub via web browser SSO from Okta Tile; then open GitHub Desktop from there
+    * Install - [VSCode Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python); as of 23Oct2023 the current version is v2023.18.0
+    * Install - [VScode Python Environment Manager](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-environment-manager); as of 23Oct2023 the current version is v1.2.4
+    * Install - [VScode Snowflake Extension](https://marketplace.visualstudio.com/items?itemName=snowflake.snowflake-vsc); as of 25Oct2023 the current version is v1.3.0
 
-    * You can download the miniconda installer from
-https://conda.io/miniconda.html. OR, you may use any other Python environment with Python 3.8
-
-### Optional
-
-* If you've not already done so, install Git on your machine
-Windows & Mac Instructions | https://www.jcchouinard.com/install-git/
-
-* Visual Studio Code | https://code.visualstudio.com/
 
 
 
 ### **Step 1** -- Clone or download repository
 
-* Open Terminal on Mac or Command Prompt/Anaconda Prompt on Windows and navigate to your preferred directory
+* Clone - CLone this repo using [git dekstop](https://github.com/sfc-gh-jgainey/Snowpark_HOL)
+![Clone with Gitdesktop](./Readme_assets/readme6.png)
 
-* Use the git clone command along with the copied URL (`git clone https://github.com/sfc-gh-jgainey/Snowpark_HOL`)
 
-### **Step 2** -- Create And Activate Conda Environment
+### **Step 2** -- Create And Activate Conda Environment using Terminal Window in VS Code
   
 * `conda create --name snowpark -c https://repo.anaconda.com/pkgs/snowflake python=3.8`
 
@@ -57,16 +52,15 @@ Windows & Mac Instructions | https://www.jcchouinard.com/install-git/
 
 * `pip install streamlit`
 
-### **Step 4** -- Using Finder in Mac or File Explore on Windows navigate to the local repository and open [connections.json](connections.json) with your file editor of choice.  Update the Snowflake account details and credentials. Please do not edit the database, schema, role or warehouse that is provided. 
+### **Step 4** -- In VS Code, open [connections.json](connections.json).  Update the Snowflake account details and credentials. Please do not edit the database, schema, role or warehouse that is provided. 
 
 * Note: For the **account** parameter, specify your [account identifier](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html) and do not include the snowflakecomputing.com domain name. Snowflake automatically appends this when creating the connection.
 
-### **Step 5** -- Enable Jupyter Notebook for the environment you just created
+### **Step 5** -- In VS Code, execute the following commmand.
 * In a terminal or command prompt, run  `python -m ipykernel install --user --name snowpark --display-name "Python (Snowpark)"`
 
 ### **Step 6** -- Confirm your ability to authenticate
 
-* In a terminal or command prompt window, browse to the folder where you have this Notebook downloaded and run `jupyter notebook` at the command line
-* Navigate to the [Snowpark_For_Python.ipynb](Snowpark_For_Python.ipynb) notebook and run the "Import Libraries" cell and "Establish Secure Connection to Snowflake" cell.
+* In VS Code, navigate to the [Snowpark_For_Python.ipynb](Snowpark_For_Python.ipynb) notebook and run the "Import Libraries" cell and "Establish Secure Connection to Snowflake" cell.
 * Confirm you were able to run both cells with no errors.  If so, you're ready for the Hands-on Lab!  If not, please reach to your account team for help with your errors.
   * Note: Make sure the Jupyter notebook (Python) kernel is set to ***Python (Snowpark)***
