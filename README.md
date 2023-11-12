@@ -25,7 +25,7 @@ Workshop highlights:
     * A Snowflake Account
     * If you've not already done so, install Git on your machine Windows & Mac Instructions | https://www.jcchouinard.com/install-git/
     * Install - [VS Code](https://code.visualstudio.com/) (recommended); as of 25Oct2023 the current version is v1.83.1 (Universal)
-    * Install - [Miniconda] (https://conda.io/miniconda.html).
+    * Install - [Miniconda](https://conda.io/miniconda.html).
     * Install - [Github Desktop](https://desktop.github.com/) (recommended); access GitHub via web browser SSO from Okta Tile; then open GitHub Desktop from there
     * Install - [VSCode Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python); as of 23Oct2023 the current version is v2023.18.0
     * Install - [VScode Python Environment Manager](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-environment-manager); as of 23Oct2023 the current version is v1.2.4
