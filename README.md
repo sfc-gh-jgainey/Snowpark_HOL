@@ -36,8 +36,10 @@ Workshop highlights:
 
 ### **Step 1** -- Clone or download repository
 
-* Clone - CLone this repo using [git dekstop](https://github.com/sfc-gh-jgainey/Snowpark_HOL)
+* Clone - Clone this repo using [git dekstop](https://github.com/sfc-gh-jgainey/Snowpark_HOL)
 ![Clone with Gitdesktop](./Readme_assets/readme6.png)
+
+
 
 
 ### **Step 2** -- Create And Activate Conda Environment using Terminal Window in VS Code
@@ -46,18 +48,26 @@ Workshop highlights:
 
 * `conda activate snowpark`
 
+
+
 ### **Step 3** -- Install Snowpark for Python and other libraries in Conda environment
 
 * `conda install -c https://repo.anaconda.com/pkgs/snowflake snowflake-snowpark-python pandas notebook scikit-learn cachetools plotly snowflake-ml-python`
 
 * `pip install streamlit`
 
+
+
 ### **Step 4** -- In VS Code, open [connections.json](connections.json).  Update the Snowflake account details and credentials. Please do not edit the database, schema, role or warehouse that is provided. 
 
 * Note: For the **account** parameter, specify your [account identifier](https://docs.snowflake.com/en/user-guide/admin-account-identifier.html) and do not include the snowflakecomputing.com domain name. Snowflake automatically appends this when creating the connection.
 
+
+
 ### **Step 5** -- In VS Code, execute the following commmand.
 * In a terminal or command prompt, run  `python -m ipykernel install --user --name snowpark --display-name "Python (Snowpark)"`
+
+
 
 ### **Step 6** -- Confirm your ability to authenticate
 
