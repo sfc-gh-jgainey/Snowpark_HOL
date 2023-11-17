@@ -1,6 +1,6 @@
 # Advertising Spend and ROI Prediction
 
-The source content for this demo was presented during the [Snowflake Summit Opening Keynote](https://events.snowflake.com/summit/agenda/session/849836). It is built using Snowpark For Python. It has been modified slightly for the purposes of this workshop.
+
 
 ## Overview
 
@@ -27,16 +27,16 @@ Workshop highlights:
     * Install - [VS Code](https://code.visualstudio.com/) (recommended); as of 25Oct2023 the current version is v1.83.1 (Universal)
     * Install - [Miniconda](https://conda.io/miniconda.html).
     * Install - [Github Desktop](https://desktop.github.com/) (recommended); access GitHub via web browser SSO from Okta Tile; then open GitHub Desktop from there
-    * Install - [VSCode Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python); as of 23Oct2023 the current version is v2023.18.0
-    * Install - [VScode Python Environment Manager](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-environment-manager); as of 23Oct2023 the current version is v1.2.4
-    * Install - [VScode Snowflake Extension](https://marketplace.visualstudio.com/items?itemName=snowflake.snowflake-vsc); as of 25Oct2023 the current version is v1.3.0
+    * Install - [VSCode Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python); as of October 23rd, 2023 the current version is v2023.18.0
+    * Install - [VScode Python Environment Manager](https://marketplace.visualstudio.com/items?itemName=donjayamanne.python-environment-manager); as of October 23rd, 2023 the current version is v1.2.4
+    * Install - [VScode Snowflake Extension](https://marketplace.visualstudio.com/items?itemName=snowflake.snowflake-vsc); as of October 25th, 2023 the current version is v1.3.0
 
 
 
 
 ### **Step 1** -- Clone or download repository
 
-* Clone - Clone this repo using [git dekstop](https://github.com/sfc-gh-jgainey/Snowpark_HOL)
+* Clone - Clone this repo using [git desktop](https://github.com/sfc-gh-jgainey/Snowpark_HOL)
 ![Clone with Gitdesktop](./Readme_assets/readme6.png)
 
 
@@ -53,8 +53,6 @@ Workshop highlights:
 ### **Step 3** -- Install Snowpark for Python and other libraries in Conda environment
 
 * `conda install -c https://repo.anaconda.com/pkgs/snowflake snowflake-snowpark-python pandas notebook scikit-learn cachetools plotly snowflake-ml-python`
-
-* `pip install streamlit`
 
 
 
