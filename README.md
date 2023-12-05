@@ -50,7 +50,7 @@ Workshop highlights:
 
 
 
-### **Step 3** -- Install Snowpark for Python and other libraries in Conda environment
+### **Step 3** -- Install Snowpark for Python and other libraries in Conda environment required for this Hands-on Lab.
 
 * `conda install -c https://repo.anaconda.com/pkgs/snowflake snowflake-snowpark-python pandas notebook scikit-learn cachetools plotly snowflake-ml-python`
 
