@@ -6,5 +6,5 @@
     "warehouse"     : "WH_SHOWPARK_HOL",
     "rolename"      : "SNOWPARK_WORKSHOP_ROLE",
     "password"      : "",
-    "authenticator": "ExternalBrowser"
+    "authenticator" : "ExternalBrowser"    
   }
